@@ -1,7 +1,7 @@
 
 public class IterativeLinearSearch {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         int[] arrayForSearching = {15,30,0,7,8,9,13,12,10};
         int targetValue = 10;
 
