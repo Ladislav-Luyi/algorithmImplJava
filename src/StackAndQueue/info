@@ -1,0 +1,4 @@
+There is also Bag datatype which is for the purpose if you just want collection of items and iterate over them and order is not important.
+In this case you would implement stack without pop or queue without dequeue + iterable interface+
+
+There is two stack datatype which can by use for mathematical evaluation
