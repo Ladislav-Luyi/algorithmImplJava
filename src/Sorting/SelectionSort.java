@@ -1,7 +1,8 @@
 package Sorting;
 
 import java.util.Arrays;
-
+// https://www.youtube.com/watch?v=g-PGLbMth_g
+// check also info.txt file
 public class SelectionSort {
 
         static void sort(int [] array){
