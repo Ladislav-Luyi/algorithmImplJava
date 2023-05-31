@@ -1,0 +1,16 @@
+Insertion sort, selection sort, and bubble sort are three simple sorting algorithms. While they all aim to sort a list of elements in ascending or descending order, they differ in their approaches and efficiencies.
+
+Bubble Sort:
+Bubble sort is a comparison-based sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order. The algorithm continues to pass through the list until no more swaps are needed, indicating that the list is sorted. Bubble sort has a time complexity of O(n^2) in the worst and average case, making it inefficient for large datasets.
+
+Selection Sort:
+Selection sort is another comparison-based sorting algorithm that divides the input list into two parts: the sorted part at the beginning and the unsorted part at the end. It repeatedly selects the smallest (or largest) element from the unsorted part and swaps it with the element in the sorted part at the current position. Selection sort also has a time complexity of O(n^2), which makes it less efficient for large datasets.
+
+Insertion Sort:
+Insertion sort is a comparison-based sorting algorithm that builds the final sorted list one element at a time. It starts with the second element and compares it with each element in the sorted part of the list, shifting the elements as necessary to make room for the current element. This process is repeated for each subsequent element until the entire list is sorted. Insertion sort has an average and worst-case time complexity of O(n^2) but performs better than bubble sort and selection sort in practice, especially for small or partially sorted lists.
+
+In summary, the main differences between these sorting algorithms are in their approaches. Bubble sort repeatedly swaps adjacent elements, selection sort repeatedly selects the smallest (or largest) element, and insertion sort builds the sorted list by inserting elements into their proper positions. Bubble sort and selection sort have the same time complexity and are generally less efficient than insertion sort.
+
+
+
+
