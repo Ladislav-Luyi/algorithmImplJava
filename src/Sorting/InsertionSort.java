@@ -2,7 +2,7 @@ package Sorting;
 
 
 import java.util.Arrays;
-
+// https://www.youtube.com/watch?v=JU767SDMDvA
 public class InsertionSort {
 
     static void sort(int [] array){
