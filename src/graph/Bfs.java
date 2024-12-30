@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// can be used for directed and also for undirected graphs
 public class Bfs {
     boolean[] visitedVertecies;
     Integer[] edgeTo;

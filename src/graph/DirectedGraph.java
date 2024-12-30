@@ -6,19 +6,19 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class AdjacencyList {
+public class DirectedGraph {
     Bag<Integer>[] listBags;
     Set<Integer> V = new HashSet<>(); // all vertices
-    AdjacencyList(int n){
+    DirectedGraph(int n){
         listBags = new Bag[n];
         for (int i = 0; i < listBags.length; i++){
             listBags[i] = new Bag<>();
         }
     }
 
+    // this is difference to Adjacency list (in our case undirected graph)
     void addEdge(int vertex1, int vertex2){
         listBags[vertex1].push(vertex2);
-        listBags[vertex2].push(vertex1);
         V.add(vertex1);
         V.add(vertex2);
     }
@@ -37,7 +37,7 @@ public class AdjacencyList {
     }
 
     public static void main(String[] args) {
-        AdjacencyList list = new AdjacencyList(10);
+        DirectedGraph list = new DirectedGraph(10);
         list.addEdge(0,1);
         list.addEdge(5,6);
         list.addEdge(0,5);

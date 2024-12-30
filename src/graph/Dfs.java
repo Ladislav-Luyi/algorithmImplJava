@@ -2,6 +2,14 @@ package graph;
 
 import java.util.Iterator;
 
+// can be used for directed and also for undirected graphs
+/*
+usability:
+reachability
+path finding
+topological sort
+directed cycle detection
+ */
 public class Dfs {
     boolean[] isEdgeVisited;
     Integer[] edgeTo;
