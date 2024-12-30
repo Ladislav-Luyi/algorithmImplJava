@@ -7,7 +7,7 @@ import java.util.*;
 public class AdjacencyList {
     List<List<Integer>> listOfList;
     Set<Integer> V = new HashSet<>(); // all vertices
-    AdjacencyList(int n){
+    public AdjacencyList(int n){
         listOfList = new ArrayList<>(n);
         for (int i = 0; i < n; i++){
             listOfList.add(new ArrayList<>());
