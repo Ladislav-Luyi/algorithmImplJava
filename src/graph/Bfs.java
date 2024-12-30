@@ -11,8 +11,8 @@ public class Bfs {
     Integer[] edgeTo;
 
     Bfs(AdjacencyList adjacencyList, Integer i){
-        visitedVertecies = new boolean[adjacencyList.listBags.length];
-        edgeTo = new Integer[adjacencyList.listBags.length];
+        visitedVertecies = new boolean[adjacencyList.listOfList.size()];
+        edgeTo = new Integer[adjacencyList.listOfList.size()];
 
         doBfs(adjacencyList, i);
 

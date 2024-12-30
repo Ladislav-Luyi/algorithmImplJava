@@ -2,30 +2,28 @@ package graph;
 
 import StackAndQueue.Bag;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class AdjacencyList {
-    Bag<Integer>[] listBags;
+    List<List<Integer>> listOfList;
     Set<Integer> V = new HashSet<>(); // all vertices
     AdjacencyList(int n){
-        listBags = new Bag[n];
-        for (int i = 0; i < listBags.length; i++){
-            listBags[i] = new Bag<>();
+        listOfList = new ArrayList<>(n);
+        for (int i = 0; i < n; i++){
+            listOfList.add(new ArrayList<>());
         }
     }
 
     void addEdge(int vertex1, int vertex2){
-        listBags[vertex1].push(vertex2);
-        listBags[vertex2].push(vertex1);
+        listOfList.get(vertex1).add(vertex2);
+        listOfList.get(vertex2).add(vertex1);
         V.add(vertex1);
         V.add(vertex2);
     }
 
     void print(){
-        for(int i = 0; i < listBags.length; i++){
-            Iterator<Integer> iterator = listBags[i].iterator();
+        for(int i = 0; i < listOfList.size(); i++){
+            Iterator<Integer> iterator = listOfList.get(i).iterator();
             while (iterator.hasNext()){
                 System.out.println( i + " - " + iterator.next() );
             }
@@ -33,7 +31,7 @@ public class AdjacencyList {
     }
 
     Iterator<Integer> getAdjacencyVertecies(int i){
-        return listBags[i].iterator();
+        return listOfList.get(i) .iterator();
     }
 
     public static void main(String[] args) {

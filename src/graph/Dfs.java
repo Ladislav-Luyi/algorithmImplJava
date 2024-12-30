@@ -15,8 +15,8 @@ public class Dfs {
     Integer[] edgeTo;
 
     Dfs(AdjacencyList al, int s){
-        isEdgeVisited = new boolean[al.listBags.length];
-        edgeTo = new Integer[al.listBags.length];
+        isEdgeVisited = new boolean[al.listOfList.size()];
+        edgeTo = new Integer[al.listOfList.size()];
         doDfs(al, s);
     }
 
